@@ -38,7 +38,18 @@ function prevSlide(){
 }
 function nextSlide(){
 
+    clearInterval(intervalID);
     slideIndex++;
     showSlide(slideIndex);
 
 }
+
+
+
+document.getElementById("email").onclick = () => {
+  window.location.href = "mailto:megayveltal7@gmail.com";
+};
+
+document.getElementById("theme").onclick = () => {
+  document.body.classList.toggle("light");
+};

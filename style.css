@@ -2,6 +2,12 @@ body{
   background-color: #090C08;
   padding: 0;
   margin: 0 auto;
+  font-size: 16px;
+  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.light{
+  background-color: #F5F5F5;
 }
 
 p{
@@ -40,18 +46,23 @@ p{
   padding-inline: 3rem; 
 }
 
-
-.slide{
-  width: 100%;
-  height: auto;
-  margin: 0 auto;
-  padding-top: 5rem;
+.image-container{
+  position: relative;
+  padding-top: 2rem;
+  
 }
 
 .slider{
   position: relative;
   overflow: hidden;
 }
+
+.slide{
+  width: 100%;
+  height: auto;
+  margin: 0 auto;
+}
+
 
 .slider img{
   display: none;
@@ -72,6 +83,20 @@ img.displaySlide{
   }
 }
 
+button{
+  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.buttons button{
+  position: absolute;
+  top: 50%;
+  background: rgba(0,0,0,0);
+  border: none;
+  color: #178C54;
+  font-size: 2rem;
+  padding-inline: 0.5em;
+}
+
 .prevbutton{
   left: 0;
 }
@@ -81,17 +106,22 @@ img.displaySlide{
 }
 
 .logo{
-  width: 39rem;
-  height: 6.25rem;
-  margin: auto;
   position: absolute;
-  display: flex; 
+  display: flex;
+  top: 5.5rem;
+  align-items: center;
+  justify-content: center;
 }
 
-#links{
+.natty-logo{
+  width: 90%;
+  animation: fadeIn 3s ease-in forwards;
+}
+
+.links{
   margin-left: auto;
   margin-right: auto;
-  padding: 3rem;
+  padding: 1rem;
   display: flex;
   justify-content: center;
 }
@@ -105,4 +135,22 @@ img.displaySlide{
 
 a:hover{
   color:#090C08;
+}
+
+#email:hover{
+  color: #81667A;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+#theme{
+  position: fixed;
+  bottom: 1rem;
+  color: #D9D9D9;
+  border-radius: 15px;
+  border: none;
+  background-color: #178C54;
 }

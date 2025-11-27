@@ -18,23 +18,28 @@
     </nav>
   </div>
   <main>
-    <section class="logo">
-      <img class="natty-logo" src="media/natty_studios.png" alt="My logo">
-    </section>
-    <section class="slider">
-      <div class="slides">
-        <img class="slide" src="media/natty_studios_recording_1.jpg" alt="Picture of myself sitting in front of a computer, recording a guitar track.">
-        <img class="slide" src="media/natty_studios_concert.jpg" alt="Two close-up images of myself playing bass at a concert.">
-        <img class="slide" src="media/natty_studios_screenshot.jpg" alt="A screenshot of my DAW workspace.">
-      </div>
+    <div class="image-container">
+      <section class="slider">
+        <div class="slides">
+          <img class="slide" src="media/natty_studios_recording_1.jpg" alt="Picture of myself sitting in front of a computer, recording a guitar track.">
+          <img class="slide" src="media/natty_studios_concert.jpg" alt="Two close-up images of myself playing bass at a concert.">
+          <img class="slide" src="media/natty_studios_screenshot.jpg" alt="A screenshot of my DAW workspace.">
+        </div>
+      </section>
+      <section class="logo">
+        <img class="natty-logo" src="media/natty_studios.png" alt="My logo">
+      </section>
+    </div>
+    <div class="buttons">
       <button class="prevbutton" onClick="prevSlide()">&#10094</button>
       <button class="nextbutton" onClick="nextSlide()">&#10095</button>
-    </section>
-    <section id="links">
+    </div>
+    <section class="links">
       <a href="https://open.spotify.com/artist/1GgIo40PAlh4RY4SbcmidV?si=NgWQD5LOSXmmuGkdTwiB4w"><img class="link" src="media/spotify_logo.png"></a>
       <a href="https://www.instagram.com/nattycrvsher?igsh=MTVwZjEwNnhhMzA5bQ%3D%3D&utm_source=qr"><img class="link" src="media/instagram_logo.png"></a>
       <a href="https://www.youtube.com/@natty7242"><img class="link" src="media/youtube_logo.png"></a>
     </section>
+    <button id="theme">Toggle Theme</button>
   </main>
 </body>
 <script src="script.js"></script>
