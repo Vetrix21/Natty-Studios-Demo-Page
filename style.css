@@ -1,0 +1,108 @@
+body{
+  background-color: #090C08;
+  padding: 0;
+  margin: 0 auto;
+}
+
+p{
+  color: #D9D9D9;
+}
+
+
+
+#nav-bar{
+  /* Rectangle 1 */
+  width: 39rem;
+  height: 6.25rem;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: -2.5rem;
+  background: #178C54;
+  border-radius: 15px;
+  display: flex;
+  justify-content: center;
+  
+
+}
+
+#main-nav ul{
+  list-style-type:none;
+  margin: 0;
+  padding: 2em;
+  overflow: hidden;
+  font-size: 1.2em;
+  text-align: center;
+  display: flex;
+}
+
+#main-nav ul p{
+  display: block;
+  padding-inline: 3rem; 
+}
+
+
+.slide{
+  width: 100%;
+  height: auto;
+  margin: 0 auto;
+  padding-top: 5rem;
+}
+
+.slider{
+  position: relative;
+  overflow: hidden;
+}
+
+.slider img{
+  display: none;
+}
+
+img.displaySlide{
+  display: block;
+  animation-name: fade-slide;
+  animation-duration: 1s;
+}
+
+@keyframes fade-slide{
+  from{
+    translate: 90vw 0;
+  }
+  to {
+    translate: 0 0;
+  }
+}
+
+.prevbutton{
+  left: 0;
+}
+
+.nextbutton{
+  right: 0;
+}
+
+.logo{
+  width: 39rem;
+  height: 6.25rem;
+  margin: auto;
+  position: absolute;
+  display: flex; 
+}
+
+#links{
+  margin-left: auto;
+  margin-right: auto;
+  padding: 3rem;
+  display: flex;
+  justify-content: center;
+}
+
+.link{
+  margin: auto;
+  padding: 3rem;
+  display: inline-block;
+  overflow: hidden;
+}
+
+a:hover{
+  color:#090C08;
+}
